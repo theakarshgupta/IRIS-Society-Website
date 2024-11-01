@@ -79,6 +79,7 @@ function Team() {
           name="Akarsh Gupta" 
           role="Frontend Developer" 
           description="Develops and maintains the society’s website." 
+          image={akarsh}
         />
         <Card 
           name="Sam Wilson" 
