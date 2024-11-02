@@ -1,6 +1,9 @@
 import React from 'react';
 import akarsh from '../Assets/My Image.jpg';
 import anshi from '../Assets/Anshi.jpg';
+import ritik from '../Assets/ritik.jpg';
+import daksh from '../Assets/daksh.jpg';
+import kshitiz from '../Assets/kshitiz.jpg';
 
 function Team() {
   return (
@@ -48,19 +51,19 @@ function Team() {
           name="Daksh Sharma" 
           role="Design and Editor" 
           description="Captures and curates content for the society." 
-          //image={}
+          image={daksh}
         />
         <Card
           name="Kshitiz Rana"
           role="Event Management Head"
           description="will add later"
-          //image={}
+          image={kshitiz}
         />
         <Card
           name="Ritik Raghuvanshi"
           role="Engagement Lead"
           description="will add later"
-          //image={}
+          image={ritik}
         />
         
         <Card
@@ -82,9 +85,9 @@ function Team() {
           image={akarsh}
         />
         <Card 
-          name="Sam Wilson" 
-          role="Backend Developer" 
-          description="Ensures smooth backend operations for our digital tools." 
+          name="Kaustubh" 
+          role="Contributor" 
+          description="will add later" 
         />
         {/* Add more web dev team members here */}
       </div>
