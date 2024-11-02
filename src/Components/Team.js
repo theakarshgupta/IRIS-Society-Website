@@ -6,6 +6,7 @@ import daksh from '../Assets/daksh.jpg';
 import kshitiz from '../Assets/kshitiz.jpg';
 import sadhna from '../Assets/sadhna.jpg';
 import akansha from '../Assets/akansha.jpg';
+import chahat from '../Assets/chahat.png';
 import { Linkedin } from 'lucide-react';
 
 function Team() {
@@ -52,8 +53,8 @@ function Team() {
           name="Chahat Gupta"
           role="Content Writer"
           description="will add later"
-          //image={}
-          linkedinUrl="https://www.linkedin.com/in/theakarshgupta"
+          image={chahat}
+          linkedinUrl="https://www.linkedin.com/in/chahat-gupta-030801257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         />
         <Card 
           name="Daksh Sharma" 
@@ -82,7 +83,7 @@ function Team() {
           role="Social Media Manager"
           description="will add later"
           image={sadhna}
-          linkedinUrl="https://www.linkedin.com/in/theakarshgupta"
+          linkedinUrl="https://www.linkedin.com/in/sadhana-kumari-1658072b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         />
         {/* Add more core team members here */}
       </div>
@@ -117,7 +118,7 @@ function Card({ name, role, description, image, linkedinUrl}) {
       <p style={styles.description}>{description}</p>
       {linkedinUrl && (
         <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" style={styles.logo}>
-          <Linkedin size={24} color="#0A66C2" />
+          <Linkedin size={25} color="#0A66C2" />
         </a>
       )}
     </div>
