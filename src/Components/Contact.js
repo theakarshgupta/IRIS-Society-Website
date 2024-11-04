@@ -6,7 +6,11 @@ function ContactSection() {
   return (
     <section style={styles.section}>
       <div style={styles.container}>
-        {/* Left side - Contact Info */}
+        {/* Left side - Image */}
+        <div style={styles.imageContainer}>
+          <img src={contact} alt="Contact Illustration" style={styles.image} />
+        </div>
+        {/* Right side - Contact Info */}
         <div style={styles.info}>
           <h2 style={styles.heading}><strong>Contact Us</strong></h2>
           <p style={styles.text}>
@@ -19,19 +23,13 @@ function ContactSection() {
             <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" style={styles.socialLink}>
               <Linkedin size={30} />
             </a>
-            {/* <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer" style={styles.socialLink}>
-              <Facebook size={30} />
-            </a> */}
             <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" style={styles.socialLink}>
               <Instagram size={30} />
             </a>
           </div>
         </div>
         
-        {/* Right side - Image */}
-        <div style={styles.imageContainer}>
-          <img src={contact} alt="Contact Illustration" style={styles.image} />
-        </div>
+        
       </div>
     </section>
   );
