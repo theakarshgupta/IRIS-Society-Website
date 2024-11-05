@@ -7,6 +7,7 @@ import kshitiz from '../Assets/kshitiz.jpg';
 import sadhna from '../Assets/sadhna.jpg';
 import akansha from '../Assets/akansha.jpg';
 import chahat from '../Assets/chahat.png';
+import kaustubh from '../Assets/kaustubh.jpg';
 import { Linkedin } from 'lucide-react';
 
 function Team() {
@@ -174,6 +175,7 @@ function Team() {
           name="Kaustubh" 
           role="Contributor" 
           description="will add later" 
+          image={kaustubh}
         />
         {/* Add more web dev team members here */}
       </div>
