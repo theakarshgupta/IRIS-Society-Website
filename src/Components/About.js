@@ -61,10 +61,10 @@ const styles = {
     borderRadius: '10px',
   },
   description: {
-    fontSize: '1.2rem',
+    fontSize: '1rem',
     color: '#cccccc',
-    maxWidth: '800px',
-    margin: '0 90px 20px',
+    maxWidth: 'auto',
+    margin: '0 9px 20px',
     lineHeight: '1.6',
     textAlign: 'justify',
   },
