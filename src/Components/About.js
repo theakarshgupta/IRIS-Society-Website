@@ -17,7 +17,7 @@ const AboutSection = () => {
           <li>Workshops and Tutorials</li>
           <li>Photowalks</li>
           <li>Collaborations</li>
-          <li>Monthly Photography Competitions</li>
+          <li>Monthly Competitions</li>
         </ul>
         <a href="https://linktr.ee/iris_iitm" target="_blank" rel="noopener noreferrer" style={styles.buttonLink}>
           <button style={styles.exploreButton}>Learn More</button>
@@ -41,7 +41,7 @@ const styles = {
     alignItems: 'Center',
     justifyContent: 'center',
     gap: '20px',
-    height: '100vh',
+    Height: 'auto',
     backgroundImage: `url(${bg2})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
@@ -50,6 +50,7 @@ const styles = {
     fontSize: '3rem',
     color: '#ADEBFF',
     marginBottom: '20px',
+    marginTop: '30px',
     fontFamily: "'Poppins', sans-serif",
   },
   textSection: {

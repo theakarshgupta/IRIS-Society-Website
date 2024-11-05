@@ -1,14 +1,16 @@
 import React from 'react';
+import { Facebook, Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer style={styles.footer}>
       <div style={styles.footerContent}>
+        <p style={styles.footerContent}> Made by Akarsh Gupta</p>
         <p style={styles.text}>© 2024 IRIS Photography Society. All rights reserved.</p>
         <div style={styles.socialLinks}>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" style={styles.link}>Facebook</a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style={styles.link}>Instagram</a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" style={styles.link}>Twitter</a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" style={styles.link}><Facebook strokeWidth={0.8}/></a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style={styles.link}><Instagram strokeWidth={0.8}/></a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" style={styles.link}><Linkedin strokeWidth={.8}/></a>
         </div>
       </div>
     </footer>
@@ -39,7 +41,7 @@ const styles = {
     marginTop: '10px',
   },
   link: {
-    color: '#ADEBFF',
+    color: '#ffffff',
     textDecoration: 'none',
     fontSize: '1rem',
     transition: 'color 0.3s ease',

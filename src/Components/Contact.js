@@ -21,10 +21,10 @@ function ContactSection() {
           {/* <p style={styles.contactDetail}><strong>Phone:</strong> +1 234 567 8901</p> */}
           <div style={styles.socialLinks}>
             <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" style={styles.socialLink}>
-              <Linkedin size={30} />
+              <Linkedin size={30} strokeWidth={1}/>
             </a>
             <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" style={styles.socialLink}>
-              <Instagram size={30} />
+              <Instagram size={30} strokeWidth={1}/>
             </a>
           </div>
         </div>
@@ -82,7 +82,7 @@ const styles = {
     marginTop: '20px',
   },
   socialLink: {
-    color: 'Blue',
+    color: 'white',
     textDecoration: 'none',
   },
   imageContainer: {
