@@ -8,8 +8,17 @@ const AboutSection = () => {
       <div style={styles.textSection}>
         <h2 style={styles.heading}><strong>About Us</strong></h2>
         <p style={styles.description}>
-          The IRIS Photography Society is a vibrant community of photographers dedicated to capturing the beauty in everyday moments. We celebrate the power of perspective and offer a platform for aspiring photographers to hone their skills, collaborate, and inspire each other through the art of visual storytelling.
+        Welcome to the IRIS Photography Society at IIT Madras, a dynamic community dedicated to celebrating and exploring the art of photography. Our society aims to inspire creativity, enhance skills, and foster a shared passion for capturing moments through the lens.
         </p>
+        <p style={styles.description}>
+        Founded under the IIT Madras BS Degree program, IRIS is open to all students under this domain, regardless of their photography experience. We believe that photography is a powerful medium for storytelling and self-expression, and we strive to create an inclusive environment where every member can grow and thrive.
+        </p>
+        <ul style={styles.description}> <strong>Our Activities</strong>
+          <li>Workshops and Tutorials</li>
+          <li>Photowalks</li>
+          <li>Collaborations</li>
+          <li>Monthly Photography Competitions</li>
+        </ul>
         <a href="https://linktr.ee/iris_iitm" target="_blank" rel="noopener noreferrer" style={styles.buttonLink}>
           <button style={styles.exploreButton}>Learn More</button>
         </a>
@@ -32,7 +41,7 @@ const styles = {
     alignItems: 'Center',
     justifyContent: 'center',
     gap: '20px',
-    height: '95vh',
+    height: '100vh',
     backgroundImage: `url(${bg2})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
@@ -55,7 +64,7 @@ const styles = {
   },
   image: {
     maxWidth: '100%',
-    width: '100%',
+    width: '90%',
     Height: 'auto',
     objectFit: 'contain',
     borderRadius: '10px',
