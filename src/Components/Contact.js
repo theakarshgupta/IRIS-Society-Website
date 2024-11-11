@@ -12,7 +12,7 @@ function ContactSection() {
         </div>
         {/* Right side - Contact Info */}
         <div style={styles.info}>
-          <h2 style={styles.heading}><strong>Contact Us</strong></h2>
+          <h2 style={styles.heading}><strong>Connect with Us</strong></h2>
           <p style={styles.text}>
             Reach out to us through any of the following means, and we’ll get back to you as soon as possible.
           </p>

@@ -7,6 +7,7 @@ import Footer from './Components/Footer';
 import Contact from './Components/Contact';
 import Gallery from './Components/Gallery';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import EventsPage from './Components/EventsPage';
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/events" element={<EventsPage/>} />
         </Routes>
+        {/* <EventsPage/> */}
         <Footer />
       </div>
     </Router>

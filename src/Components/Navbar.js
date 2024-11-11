@@ -98,7 +98,7 @@ const Navbar = () => {
         </button>
 
         <ul style={isMobile ? styles.navListMobile : styles.navList}>
-          {['Home', 'Team', 'Gallery', 'About', 'Contact'].map((item, index) => (
+          {['Home', 'Events', 'Gallery', 'About', 'Contact'].map((item, index) => (
             <li key={item} style={styles.navItem}>
               <Link
                 to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}

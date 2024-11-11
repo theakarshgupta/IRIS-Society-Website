@@ -1,18 +1,21 @@
 import React from 'react';
 import logo from '../Assets/IRIS.png';
 import bg from '../Assets/1.png';
+// import EventsPage from './EventsPage';
 
 const HomeSection = () => {
   return (
-    <section style={styles.homeSection}>
-      <img src={logo} alt='IRIS logo' style={styles.logo} />
-      <h1 style={styles.title}>IRIS Photography Society</h1>
-      <p style={styles.subtitle}>Through Our Lenses, Beyond the Ordinary</p>
-      <a href="https://linktr.ee/iris_iitm" target="_blank" rel="noopener noreferrer" style={styles.buttonLink}>
-        <button style={styles.exploreButton}>Join Now</button>
-      </a>
-
-    </section>
+    <>
+      <section style={styles.homeSection}>
+        <img src={logo} alt='IRIS logo' style={styles.logo} />
+        <h1 style={styles.title}>IRIS Photography Society</h1>
+        <p style={styles.subtitle}>Through Our Lenses, Beyond the Ordinary</p>
+        <a href="https://linktr.ee/iris_iitm" target="_blank" rel="noopener noreferrer" style={styles.buttonLink}>
+          <button style={styles.exploreButton}>Join Now</button>
+        </a>
+      </section>
+      {/* <EventsPage /> */}
+    </>
   );
 };
 

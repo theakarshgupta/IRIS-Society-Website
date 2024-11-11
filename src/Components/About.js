@@ -1,6 +1,7 @@
 import React from 'react';
 import logo3 from '../Assets/about.png';
 import bg2 from '../Assets/2.png';
+import { Link } from 'react-router-dom';
 
 const AboutSection = () => {
   return (
@@ -8,10 +9,10 @@ const AboutSection = () => {
       <div style={styles.textSection}>
         <h2 style={styles.heading}><strong>About Us</strong></h2>
         <p style={styles.description}>
-        Welcome to the IRIS Photography Society at IIT Madras, a dynamic community dedicated to celebrating and exploring the art of photography. Our society aims to inspire creativity, enhance skills, and foster a shared passion for capturing moments through the lens.
+          Welcome to the IRIS Photography Society at IIT Madras, a dynamic community dedicated to celebrating and exploring the art of photography. Our society aims to inspire creativity, enhance skills, and foster a shared passion for capturing moments through the lens.
         </p>
         <p style={styles.description}>
-        Founded under the IIT Madras BS Degree program, IRIS is open to all students under this domain, regardless of their photography experience. We believe that photography is a powerful medium for storytelling and self-expression, and we strive to create an inclusive environment where every member can grow and thrive.
+          Founded under the IIT Madras BS Degree program, IRIS is open to all students under this domain, regardless of their photography experience. We believe that photography is a powerful medium for storytelling and self-expression, and we strive to create an inclusive environment where every member can grow and thrive.
         </p>
         <ul style={styles.description}> <strong>Our Activities</strong>
           <li>Workshops and Tutorials</li>
@@ -19,9 +20,9 @@ const AboutSection = () => {
           <li>Collaborations</li>
           <li>Monthly Competitions</li>
         </ul>
-        <a href="https://linktr.ee/iris_iitm" target="_blank" rel="noopener noreferrer" style={styles.buttonLink}>
-          <button style={styles.exploreButton}>Learn More</button>
-        </a>
+        <Link to="/team" style={styles.buttonLink}>
+          <button style={styles.exploreButton}>Meet our Team</button>
+        </Link>
       </div>
       <div style={styles.imageSection}>
         <img src={logo3} alt='iamge reference' style={styles.image}></img>

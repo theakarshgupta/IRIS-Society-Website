@@ -203,6 +203,7 @@ const styles = {
     fontFamily: "'Poppins', sans-serif",
     fontWeight: 'bold',
     letterSpacing: '1px',
+    marginTop: '40px',
   },
   cardContainer: {
     width: '100%',
