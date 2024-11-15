@@ -8,6 +8,7 @@ import sadhna from '../Assets/sadhna.jpg';
 import akansha from '../Assets/akansha.jpg';
 import chahat from '../Assets/chahat.png';
 import kaustubh from '../Assets/kaustubh.jpg';
+import akhilesh from '../Assets/akhilesh.jpg';
 import { Linkedin } from 'lucide-react';
 
 function Team() {
@@ -31,11 +32,7 @@ function Team() {
         object-fit: cover; /* Maintain aspect ratio */
         transition: transform 0.4s ease; /* Smooth scaling */
       }
-
-      .photo-card:hover img {
-        transform: scale(1.08); /* Scale image on card hover */
-      }
-
+     
       .photo-card .overlay {
         opacity: 0; /* Initial state for overlay */
         transition: opacity 0.4s ease; /* Smooth overlay transition */
@@ -121,6 +118,7 @@ function Team() {
           name="Akhilesh"
           role="Event Coordinator"
           description="will add later"
+          image={akhilesh}
           linkedinUrl="https://www.linkedin.com/in/theakarshgupta"
         />
         <Card
@@ -216,7 +214,7 @@ const styles = {
     fontSize: '3rem',
     color: '#ADEBFF',
     marginBottom: '40px',
-    marginTop: '30px',
+    marginTop: '70px',
     fontFamily: "'Poppins', sans-serif",
   },
   subheading: {

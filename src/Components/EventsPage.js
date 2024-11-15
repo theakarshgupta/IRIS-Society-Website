@@ -1,10 +1,80 @@
-import {React, useState} from 'react';
+import { React, useState, useEffect } from 'react';
 import { Calendar, MapPin, Users, ExternalLink, X } from 'lucide-react';
 import Diwali from '../Assets/diwali.png';
 import Dussehra from '../Assets/dussehra.png';
 
 const EventCalendar = () => {
   const [selectedEvent, setSelectedEvent] = useState(null);
+  useEffect(() => {
+    const styleSheet = document.createElement("style");
+    styleSheet.textContent = `
+      .photo-card {
+        position: relative;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+        overflow: hidden;
+      }
+
+      .photo-card:hover {
+        transform: translateY(-8px); /* Move card up */
+        box-shadow: 0 10px 20px rgba(173, 235, 255, 0.3); /* Shadow effect */
+      }
+
+      .photo-card img {
+        width: 100%; /* Ensure image fills the card */
+        height: 250px; /* Fixed height for the image */
+        object-fit: cover; /* Maintain aspect ratio */
+        transition: transform 0.4s ease; /* Smooth scaling */
+      }
+
+      .photo-card .overlay {
+        opacity: 0; /* Initial state for overlay */
+        transition: opacity 0.4s ease; /* Smooth overlay transition */
+      }
+
+      .photo-card:hover .overlay {
+        opacity: 1; /* Show overlay on hover */
+        background-color: rgba(0, 0, 0, 0.75); /* Dark overlay */
+      }
+
+      .photo-card::after {
+        content: '';
+        position: absolute;
+        inset: -2px;
+        background: linear-gradient(225deg, #ADEBFF, #1a1a1a);
+        border-radius: 12px;
+        z-index: -1;
+        opacity: 0; /* Initial state for border effect */
+        transition: opacity 0.4s ease; /* Smooth border transition */
+      }
+
+      .photo-card:hover::after {
+        opacity: 0.5; /* Show border effect on hover */
+      }
+
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        grid-auto-flow: dense;
+      }
+
+      .photo-card.wide {
+        grid-column: span 2;
+      }
+
+      .photo-card.tall {
+        grid-row: span 2;
+      }
+
+      @media (max-width: 1024px) {
+        .photo-card.wide {
+          grid-column: span 1;
+        }
+      }
+    `;
+    document.head.appendChild(styleSheet);
+  }, []);
+
 
   const events = {
     ongoing: [
@@ -19,7 +89,7 @@ const EventCalendar = () => {
       //   guidelines: "/festive-frames-details",  // unique link for "Know More"
       //   registerLink: "/register-festive-frames"  // unique link for "Register Now"
       // },
-      
+
       // Other ongoing events here
     ],
     future: [
@@ -227,7 +297,8 @@ const EventCalendar = () => {
 };
 
 const EventCard = ({ event, onKnowMore, registrationClosed }) => (
-  <div className="event-card" style={styles.card}>
+  <div className="photo-card" style={styles.card}>
+    <div className="overlay"></div> {/* Overlay for hover effect */}
     <img src={event.image} alt={event.title} style={styles.image} />
     <span style={styles.category}>{event.category}</span>
     <div style={styles.cardContent}>
@@ -249,6 +320,7 @@ const EventCard = ({ event, onKnowMore, registrationClosed }) => (
     </div>
   </div>
 );
+
 
 const styles = {
   section: {
@@ -292,7 +364,7 @@ const styles = {
     backgroundColor: '#1a1a1a',
     borderRadius: '12px',
     overflow: 'hidden',
-    width:'100%',
+    width: '100%',
     maxWidth: '400px',  // Reduced width for better visibility
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
     transition: 'transform 0.3s ease',
