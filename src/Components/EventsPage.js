@@ -2,6 +2,10 @@ import { React, useState, useEffect } from 'react';
 import { Calendar, MapPin, Users, ExternalLink, X } from 'lucide-react';
 import Diwali from '../Assets/diwali.png';
 import Dussehra from '../Assets/dussehra.png';
+import Holi from '../Assets/holi.png';
+import Photowalk from '../Assets/photowalk.png';
+import Meetup from '../Assets/meetup.png';
+import Capturista from '../Assets/capturista.png';
 
 const EventCalendar = () => {
   const [selectedEvent, setSelectedEvent] = useState(null);
@@ -149,7 +153,7 @@ const EventCalendar = () => {
         title: "Festive Frames: Dussehra Special",
         description: "Hands-on design workshop for creative enthusiasts.",
         descriptionFull: '',
-        date: "09 Aug-13 Aug, 2024",
+        date: "09 Oct-13 Oct, 2024",
         location: "Online",
         hosts: 'IRIS Society X Kanha House',
         image: Dussehra,
@@ -161,7 +165,7 @@ const EventCalendar = () => {
         title: "RAW: Pixels to Perfection",
         description: "Hands-on design workshop for creative enthusiasts.",
         descriptionFull: '',
-        date: "15 Sept-17 Sept, 2024",
+        date: "15 Sept-19 Sept, 2024",
         location: "Online",
         hosts: 'IRIS Photography Society',
         image: "https://via.placeholder.com/600x400",
@@ -170,10 +174,22 @@ const EventCalendar = () => {
         registerLink: null  // No registration link since the event is over
       },
       {
+        title: "Patna Meet-Up",
+        description: "Hands-on design workshop for creative enthusiasts.",
+        descriptionFull: '',
+        date: "11 August, 2024",
+        location: "Virtual",
+        hosts: 'IRIS Society X Namdapha House X Nallamala House',
+        image: Meetup,
+        category: "offline Meetup",
+        guidelines: "https://docs.google.com/document/d/1g-GT7wVGKL3Vu6V4S1iwMeuHBF0ShJpcom8E0T1hm2E/edit?usp=sharing",  // unique link for "Know More"
+        registerLink: null  // No registration link since the event is over
+      },
+      {
         title: "Shutter Safari",
         description: "Hands-on design workshop for creative enthusiasts.",
         descriptionFull: '',
-        date: "15 Sept-17 Sept, 2024",
+        date: "30 May-02 June, 2024",
         location: "Paradox",
         hosts: 'IRIS Society x Kanha House',
         image: "https://via.placeholder.com/600x400",
@@ -200,7 +216,7 @@ const EventCalendar = () => {
         date: "25 mar-27 Mar, 2024",
         location: "Virtual",
         hosts: 'IRIS Society X Kanha House',
-        image: "https://via.placeholder.com/600x400",
+        image: Holi,
         category: "Event",
         guidelines: "https://docs.google.com/document/d/1g-GT7wVGKL3Vu6V4S1iwMeuHBF0ShJpcom8E0T1hm2E/edit?usp=sharing",  // unique link for "Know More"
         registerLink: null  // No registration link since the event is over
@@ -212,19 +228,19 @@ const EventCalendar = () => {
         date: "11 February, 2024",
         location: "Lodhi Garden, Delhi",
         hosts: 'IRIS Society X Kanha House',
-        image: "https://via.placeholder.com/600x400",
+        image: Photowalk,
         category: "Meetup",
         guidelines: "https://docs.google.com/document/d/1g-GT7wVGKL3Vu6V4S1iwMeuHBF0ShJpcom8E0T1hm2E/edit?usp=sharing",  // unique link for "Know More"
         registerLink: null  // No registration link since the event is over
       },
       {
-        title: "Colours of Culture",
+        title: "Republic Day: Capturista",
         description: "Hands-on design workshop for creative enthusiasts.",
         descriptionFull: '',
-        date: "15 Sept-17 Sept, 2024",
+        date: "26 January, 2024",
         location: "Virtual",
-        hosts: 'IRIS Society X Kanha House',
-        image: "https://via.placeholder.com/600x400",
+        hosts: 'IRIS Society',
+        image: Capturista,
         category: "Event",
         guidelines: "https://docs.google.com/document/d/1g-GT7wVGKL3Vu6V4S1iwMeuHBF0ShJpcom8E0T1hm2E/edit?usp=sharing",  // unique link for "Know More"
         registerLink: null  // No registration link since the event is over
@@ -334,14 +350,15 @@ const styles = {
     marginBottom: '30px',
     marginTop: '70px',
     textAlign: 'center',
-    fontFamily: "'Poppins', sans-serif",
+    fontFamily: "Montserrat",
+    fontWeight: '100',
   },
   subheading: {
     fontSize: '2rem',
     color: '#ffffff',
     marginBottom: '20px',
     marginTop: '80px',
-    fontFamily: "'Poppins', sans-serif",
+    fontFamily: "Questrial",
     borderBottom: '2px solid #ffffff',  // Thin white line
     paddingBottom: '10px',  // Adds some space between text and the line
   },

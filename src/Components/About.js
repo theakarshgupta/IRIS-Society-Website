@@ -51,8 +51,9 @@ const styles = {
     fontSize: '3rem',
     color: '#ADEBFF',
     marginBottom: '20px',
-    marginTop: '30px',
-    fontFamily: "'Poppins', sans-serif",
+    marginTop: '50px',
+    fontFamily: "Montserrat",
+    fontWeight: '100',
   },
   textSection: {
     flex: 1,
@@ -78,6 +79,7 @@ const styles = {
     margin: '0 9px 20px',
     lineHeight: '1.6',
     textAlign: 'justify',
+    fontFamily: 'Montserrat',
   },
   buttonLink: {
     display: 'inline-block',

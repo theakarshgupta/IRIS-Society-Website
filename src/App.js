@@ -8,6 +8,7 @@ import Contact from './Components/Contact';
 import Gallery from './Components/Gallery';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import EventsPage from './Components/EventsPage';
+import PhotoGallery from './Components/PhotoGallery';
 
 function App() {
   return (
@@ -21,8 +22,8 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/events" element={<EventsPage/>} />
+          <Route path="/photogallery" element={<PhotoGallery/>}/>
         </Routes>
-        {/* <EventsPage/> */}
         <Footer />
       </div>
     </Router>

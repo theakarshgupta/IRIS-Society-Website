@@ -30,6 +30,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    fontFamily: 'Montserrat',
   },
   text: {
     margin: '0',

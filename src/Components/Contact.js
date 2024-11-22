@@ -23,7 +23,7 @@ function ContactSection() {
             <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" style={styles.socialLink}>
               <Linkedin size={30} strokeWidth={1}/>
             </a>
-            <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" style={styles.socialLink}>
+            <a href="https://www.instagram.com/iris_iitm" target="_blank" rel="noopener noreferrer" style={styles.socialLink}>
               <Instagram size={30} strokeWidth={1}/>
             </a>
           </div>
@@ -65,16 +65,19 @@ const styles = {
     fontSize: '3rem',
     color: '#ADEBFF',
     marginBottom: '20px',
-    fontFamily: "'Poppins', sans-serif",
+    fontFamily: "Montserrat",
+    fontWeight: '100',
   },
   text: {
     fontSize: '1.2rem',
     marginBottom: '20px',
     color: '#ddd',
+    fontFamily: "Montserrat",
   },
   contactDetail: {
     fontSize: '1.1rem',
     marginBottom: '10px',
+    fontFamily: "Montserrat",
   },
   socialLinks: {
     display: 'flex',

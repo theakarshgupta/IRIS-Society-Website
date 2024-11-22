@@ -1,20 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../Assets/IRIS.png';
-import bg from '../Assets/1.png';
-// import EventsPage from './EventsPage';
+import bg from '../Assets/bg5.png';
+import PhotoOfDay from './PhotoOfDay';
 
 const HomeSection = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <>
       <section style={styles.homeSection}>
         <img src={logo} alt='IRIS logo' style={styles.logo} />
         <h1 style={styles.title}>IRIS Photography Society</h1>
         <p style={styles.subtitle}>Through Our Lenses, Beyond the Ordinary</p>
-        <a href="https://linktr.ee/iris_iitm" target="_blank" rel="noopener noreferrer" style={styles.buttonLink}>
-          <button style={styles.exploreButton}>Join Now</button>
+        <a
+          href="https://linktr.ee/iris_iitm"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={styles.buttonLink}
+        >
+          <button
+            style={{
+              ...styles.exploreButton,
+              ...(isHovered ? styles.buttonHover : {}),
+            }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            Join Now
+          </button>
         </a>
       </section>
-      {/* <EventsPage /> */}
+      <PhotoOfDay />
     </>
   );
 };
@@ -32,7 +48,6 @@ const styles = {
     backgroundImage: `url(${bg})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-
   },
   logo: {
     width: '200px',
@@ -42,35 +57,35 @@ const styles = {
   },
   title: {
     fontSize: '3rem',
-    fontWeight: 'bold',
+    fontWeight: '100',
     color: '#ffffff',
     margin: '0',
-    fontFamily: "'Poppins', sans-serif", // You can import Poppins or use a similar bold font
+    fontFamily: 'Montserrat',
   },
   subtitle: {
     fontSize: '1rem',
-    fontWeight: '300',
+    fontWeight: '200',
     color: '#ADEBFF',
     marginTop: '10px',
     maxWidth: '600px',
-    fontFamily: "'Roboto', sans-serif",
+    fontFamily: "'Montserrat','Questrial'",
   },
   exploreButton: {
     marginTop: '30px',
     padding: '10px 20px',
     fontSize: '1rem',
     fontWeight: '500',
-    backgroundColor: '#003459', // Blue accent for button
+    backgroundColor: '#1e88e5', // Blue accent for button
     color: '#ffffff',
     border: 'none',
     borderRadius: '5px',
     cursor: 'pointer',
-    transition: 'background-color 0.3s ease',
+    transition: 'all 0.3s ease',
   },
-};
-
-styles.exploreButton[':hover'] = {
-  backgroundColor: '#15417e',
+  buttonHover: {
+    backgroundColor: "#ffffff", 
+    color: "#1e88e5", 
+  },
 };
 
 export default HomeSection;

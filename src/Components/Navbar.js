@@ -39,6 +39,7 @@ const Navbar = () => {
       fontSize: '24px',
       fontWeight: 'bold',
       color: '#ffffff',
+      font: 'Montserrat',
     },
     menuButton: {
       display: isMobile ? 'block' : 'none', // Show button only on mobile
@@ -73,10 +74,11 @@ const Navbar = () => {
       textDecoration: 'none',
       color: '#ffffff',
       fontSize: '18px',
-      fontWeight: '500',
+      fontWeight: '100',
       padding: '8px 16px',
       borderRadius: '8px',
       transition: 'all 0.3s ease',
+      font: 'Montserrat',
     },
   };
 
